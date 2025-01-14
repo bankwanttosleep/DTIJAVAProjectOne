@@ -7,3 +7,5 @@ public class MyClass00 {
         System.out.println("Hi, World!");
     }
 }
+class Wow{}
+class Woo{}
