@@ -7,6 +7,8 @@ public class BMIProject1 {
         double empKg,empM,BMI;
 
         Scanner sc = new Scanner(System.in);
+
+
         System.out.println("+++++++++++++++++++++++++");
         System.out.println(" BMI Program by DTI-SAU");
         System.out.println("+++++++++++++++++++++++++");
@@ -18,7 +20,9 @@ public class BMIProject1 {
         System.out.print("input your height(m): ");
         empM = sc.nextDouble();
         System.out.println("+++++++++++++++++++++++++");
-        double bmi = empKg / (empM * empM);
-        System.out.printf("BMI of %s is %.4f\n", empName, bmi);
+        double bmi = empKg / Math.pow (empM , 2 );
+        System.out.printf("BMI of %s is %.3f\n", empName, bmi);
+        System.out.println("+++++++++++++++++++++++++");
+
     }
 }

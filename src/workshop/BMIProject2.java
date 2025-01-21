@@ -15,7 +15,6 @@ public class BMIProject2 {
         System.out.println("+++++++++++++++++++++++++");
         System.out.println(" BMI Program by DTI-SAU");
         System.out.println("+++++++++++++++++++++++++");
-
         System.out.print("Input your name: ");
         empName = reader.readLine();
         System.out.print("Input your weight(kg): ");
@@ -23,8 +22,10 @@ public class BMIProject2 {
         System.out.print("input your height(m): ");
         empM = Double.parseDouble(reader.readLine());
         System.out.println("+++++++++++++++++++++++++");
-        double bmi = empKg / (empM * empM);
-        System.out.printf("BMI of %s is %.4f\n", empName, bmi);
+        double bmi = empKg / Math.pow (empM , 2 );
+        System.out.printf("BMI of %s is %.3f\n", empName, bmi);
+        System.out.println("+++++++++++++++++++++++++");
+
 
 
     }
